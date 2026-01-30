@@ -1,14 +1,12 @@
 <!doctype html>
 <html lang="ko">
   <head>
-    <!-- Force redeploy -->
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6TTDMKY9G"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-T6TTDMKY9G');
     </script>
     <meta charset="UTF-8" />
@@ -16,196 +14,22 @@
     <title>Pildam - 서사를 잇다</title>
     <meta name="description" content="1,000자로 이어가는 릴레이 소설 플랫폼" />
     <meta name="author" content="Pildam" />
-
     <meta property="og:title" content="Pildam - 서사를 잇다" />
     <meta property="og:description" content="1,000자로 이어가는 릴레이 소설 플랫폼" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e838faeb-340f-46ed-bfd2-4f867035fe6d/id-preview-a25c00c4--8e4c47b3-4756-43a2-8e62-8ac561d10279.lovable.app-1768777591992.png" />
-
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@StoryChain" />
     <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e838faeb-340f-46ed-bfd2-4f867035fe6d/id-preview-a25c00c4--8e4c47b3-4756-43a2-8e62-8ac561d10279.lovable.app-1768777591992.png" />
-
     <!-- Noto Serif KR (본명조) & Satisfy (만년필) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Noto+Serif+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script type="module" crossorigin src="assets/index-iZuiqsfm.js"></script>
     <link rel="stylesheet" crossorigin href="assets/index-Cj7iSR5a.css">
-  
-<style>
-	@font-face {
-		font-family: 'CameraPlainVariable';
-		src: url('https://cdn.gpteng.co/mcp-widgets/v1/fonts/CameraPlainVariable.woff2') format('woff2');
-		font-weight: 100 900;
-		font-style: normal;
-		font-display: swap;
-	}
-
-	#lovable-badge {
-		--badge-bg: #1b1b1b;
-		--badge-text: #c5c1b9;
-		--badge-text-hover: #dcdad5;
-		--badge-radius: 6px;
-		--badge-padding: 8px;
-		--badge-gap: 6px;
-		--badge-shadow: 
-			0 0 0 1px rgba(0, 0, 0, 0.88),
-			0 1px 0 0 rgba(0, 0, 0, 0.04),
-			0 2px 2px -1px rgba(0, 0, 0, 0.08),
-			0 4px 4px -2px rgba(0, 0, 0, 0.08),
-			0 8px 8px -4px rgba(0, 0, 0, 0.08),
-			0 16px 16px -8px rgba(0, 0, 0, 0.08);
-		--badge-transition-duration: 0.2s;
-		--badge-transition-easing: cubic-bezier(0.16, 1, 0.32, 1);
-		--focus-color: #575ECF;
-		--focus-offset: 2px;
-		--focus-width: 2px;
-		
-		position: fixed;
-		bottom: 12px;
-		right: 12px;
-		height: 24px;
-		display: flex;
-		align-items: center;
-		z-index: 1000000;
-		background-color: var(--badge-bg);
-		color: var(--badge-text);
-		border-radius: var(--badge-radius);
-		box-shadow: var(--badge-shadow);
-		font-size: 12px;
-		font-family: CameraPlainVariable, "CameraPlainVariable Fallback", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-		font-weight: 400 !important;
-		text-transform: none !important;
-		font-feature-settings: normal !important;
-		transform: translateZ(0);
-		will-change: transform, opacity;
-	}
-
-	#lovable-badge-cta {
-		display: flex;
-		align-items: center;
-		gap: var(--badge-gap);
-		padding: 0 var(--badge-padding);
-		height: 100%;
-		color: inherit;
-		text-decoration: none;
-		white-space: nowrap;
-		border-radius: var(--badge-radius) 0 0 var(--badge-radius);
-		transition: 
-			background-color var(--badge-transition-duration) ease,
-			color var(--badge-transition-duration) ease,
-			transform 0.1s ease;
-	}
-
-	#lovable-badge-cta:hover {
-		background: rgba(255, 255, 255, 0.04);
-		color: var(--badge-text-hover);
-	}
-
-	#lovable-badge-cta:active {
-		transform: scale(0.98);
-	}
-
-	#lovable-badge-cta:focus {
-		outline: none;
-	}
-
-	#lovable-badge-cta:focus-visible {
-		outline: var(--focus-width) solid var(--focus-color);
-		outline-offset: var(--focus-offset);
-		z-index: 1;
-	}
-
-	#lovable-badge-text {
-		line-height: 1;
-	}
-
-	#lovable-badge-divider {
-		width: 1px;
-		height: 24px;
-		background-color: rgba(255, 255, 255, 0.04);
-		flex-shrink: 0;
-	}
-
-	#lovable-badge-close {
-		width: 24px;
-		height: 24px;
-		min-width: 24px;
-		min-height: 24px;
-		cursor: pointer;
-		background: none;
-		border: none;
-		padding: 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		border-radius: 0 var(--badge-radius) var(--badge-radius) 0;
-		flex-shrink: 0;
-		transition: 
-			background-color var(--badge-transition-duration) ease,
-			transform 0.1s ease;
-	}
-
-	#lovable-badge-close:hover {
-		background: rgba(255, 255, 255, 0.04);
-	}
-
-	#lovable-badge-close:active {
-		transform: scale(0.92);
-	}
-
-	#lovable-badge-close:focus {
-		outline: none;
-	}
-
-	#lovable-badge-close:focus-visible {
-		outline: var(--focus-width) solid var(--focus-color);
-		outline-offset: calc(var(--focus-offset) * -1);
-		z-index: 1;
-	}
-
-	#lovable-badge-close svg path {
-		fill: var(--badge-text);
-		transition: fill var(--badge-transition-duration) ease;
-	}
-
-	#lovable-badge-close:hover svg path {
-		fill: var(--badge-text-hover);
-	}
-
-	@media (prefers-reduced-motion: reduce) {
-		#lovable-badge-cta,
-		#lovable-badge-close,
-		#lovable-badge-close svg path {
-			transition: none;
-		}
-		
-		#lovable-badge-cta:active,
-		#lovable-badge-close:active {
-			transform: none;
-		}
-	}
-
-	@media (prefers-contrast: high) {
-		#lovable-badge {
-			--badge-bg: #000;
-			--badge-text: #fff;
-			--badge-text-hover: #fff;
-			border: 2px solid currentColor;
-		}
-		
-		#lovable-badge-cta:focus-visible,
-		#lovable-badge-close:focus-visible {
-			outline-width: 3px;
-		}
-	}
-</style>
-<script defer src="~flock.js" data-proxy-url="https://pildam.com/~api/analytics"></script></head>
-
+</head>
   <body>
     <div id="root"></div>
-  
 <aside 
 	id="lovable-badge" 
 	role="complementary" 
@@ -230,12 +54,8 @@
     </radialGradient>
   </defs>
 </svg>
-
-
 	</a>
-	
 	<span id="lovable-badge-divider" aria-hidden="true"></span>
-	
 	<button 
 		id="lovable-badge-close"
 		aria-label="Dismiss"
@@ -255,7 +75,6 @@
 			badge.style.display = 'none';
 		}
 	}
-
 	// Add click event listener to close button with animation
 	var closeButton = document.getElementById('lovable-badge-close');
 	if (closeButton) {
@@ -275,4 +94,4 @@
 	}
 </script>
 </body>
-</html>
+</html>2
